@@ -1,7 +1,8 @@
-
+import Menu from "./Menu.js";
+import './App.css';
 
 function App() {
-  const menu ={
+  const data ={
     "breakfast": [
       {"food": "pancakes", "price": 5.00, "vegetarian": true},
       {"food": "waffles", "price": 5.00, "vegetarian": true},
@@ -21,7 +22,7 @@ function App() {
   
   return (
     <div className="App">
-       {menu.map( )}
+       <Menu menu={data}/>
     </div>
   );
 }
