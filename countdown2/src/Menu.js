@@ -2,6 +2,7 @@ import Meal from "./Meal.js"
 import {useState} from 'react'
 
 function Menu (props){
+    const [showOnlyVege, setShowOnlyVege] = useState(false);
     return(<>
         <h1>Menu</h1>
         {/*comment*/  
