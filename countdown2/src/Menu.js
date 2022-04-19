@@ -9,7 +9,7 @@ function Menu (props){
         /* code goes in squiggly brackets*/}
         {showOnlyVege && <button onClick={() => setShowOnlyVege(false)} > Show All </button>}
         {!showOnlyVege && <button onClick={() => setShowOnlyVege(true)} > Show Only Vegetarian </button>}
-        {Object.keys(props.menu).map((mealName) => <Meal name={mealName} items={props.menu[mealName]} onlyVege = {showOnlyVege}/>)}
+        {Object.keys(props.menu).map((mealName) => <Meal name={mealName} items={props.menu[mealName]} onlyVegetarian = {showOnlyVege}/>)}
     </>);
 }
 export default Menu;
